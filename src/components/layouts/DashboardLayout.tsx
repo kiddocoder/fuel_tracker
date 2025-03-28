@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import {
   LayoutDashboard,
   Truck,
-  GasPump,
+  Fuel, // Replacing GasPump with Fuel
   Package,
   Clock,
   Settings,
@@ -39,7 +39,7 @@ const DashboardLayout = () => {
 
   const sidebarItems = [
     { name: "Dashboard", icon: LayoutDashboard, path: "/" },
-    { name: "Order Fuel", icon: GasPump, path: "/order" },
+    { name: "Order Fuel", icon: Fuel, path: "/order" }, // Changed GasPump to Fuel
     { name: "Track Delivery", icon: Truck, path: "/track" },
     { name: "Order History", icon: Clock, path: "/history" },
     { name: "Settings", icon: Settings, path: "/settings" },
