@@ -1,3 +1,4 @@
+
 // Import the new MapControlButtons component
 import MapControlButtons from '@/components/map/MapControlButtons';
 import { useRef, useState, useEffect } from 'react';
@@ -24,9 +25,9 @@ const Track = () => {
     });
 
     map.on('move', () => {
-      setLng(map.getCenter().lng.toFixed(4));
-      setLat(map.getCenter().lat.toFixed(4));
-      setZoom(map.getZoom().toFixed(2));
+      setLng(Number(map.getCenter().lng.toFixed(4)));
+      setLat(Number(map.getCenter().lat.toFixed(4)));
+      setZoom(Number(map.getZoom().toFixed(2)));
     });
 
     mapRef.current = map;
